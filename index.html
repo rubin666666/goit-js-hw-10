@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOIT JS HW 10</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        margin: 0;
+        padding: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        box-sizing: border-box;
+      }
+      .container {
+        text-align: center;
+        background: white;
+        padding: 3rem 2.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+        max-width: 600px;
+        width: 100%;
+      }
+      h1 {
+        color: #2d3748;
+        margin: 0 0 0.5rem 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .subtitle {
+        color: #718096;
+        margin: 0 0 2.5rem 0;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+      .tasks {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        margin-bottom: 1rem;
+      }
+      .task-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 1.25rem 2rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 0.75rem;
+        font-weight: 600;
+        font-size: 1.05rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      }
+      .task-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+      }
+      .task-link:active {
+        transform: translateY(-1px);
+      }
+      .icon {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 640px) {
+        .container {
+          padding: 2rem 1.5rem;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        .task-link {
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-CVOpK0ef.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1> GOIT JS HW 10</h1>
+      <p class="subtitle">Домашнє завдання №10 - JavaScript</p>
+      <div class="tasks">
+        <a href="./1-timer.html" class="task-link">
+          <span class="icon"></span>
+          <span>Завдання 1 - Таймер зворотного відліку</span>
+        </a>
+        <a href="./2-snackbar.html" class="task-link">
+          <span class="icon"></span>
+          <span>Завдання 2 - Генератор промісів</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
