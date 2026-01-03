@@ -13,55 +13,89 @@
         min-height: 100vh;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         margin: 0;
-        font-family: system-ui, -apple-system, sans-serif;
+        padding: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        box-sizing: border-box;
       }
       .container {
         text-align: center;
         background: white;
-        padding: 3rem;
-        border-radius: 1rem;
-        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        max-width: 500px;
+        padding: 3rem 2.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+        max-width: 600px;
+        width: 100%;
       }
       h1 {
-        color: #333;
-        margin-bottom: 1rem;
+        color: #2d3748;
+        margin: 0 0 0.5rem 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
       }
-      p {
-        color: #666;
-        margin-bottom: 2rem;
+      .subtitle {
+        color: #718096;
+        margin: 0 0 2.5rem 0;
+        font-size: 1.1rem;
+        font-weight: 400;
       }
       .tasks {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.25rem;
+        margin-bottom: 1rem;
       }
       .task-link {
-        display: block;
-        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 1.25rem 2rem;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
         text-decoration: none;
-        border-radius: 0.5rem;
+        border-radius: 0.75rem;
         font-weight: 600;
-        transition: transform 0.2s, box-shadow 0.2s;
+        font-size: 1.05rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
       }
       .task-link:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+      }
+      .task-link:active {
+        transform: translateY(-1px);
+      }
+      .icon {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 640px) {
+        .container {
+          padding: 2rem 1.5rem;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        .task-link {
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
       <h1> GOIT JS HW 10</h1>
-      <p>Домашнє завдання №10 - JavaScript</p>
+      <p class="subtitle">Домашнє завдання №10 - JavaScript</p>
       <div class="tasks">
         <a href="./1-timer.html" class="task-link">
-           Завдання 1 - Таймер зворотного відліку
+          <span class="icon"></span>
+          <span>Завдання 1 - Таймер зворотного відліку</span>
         </a>
         <a href="./2-snackbar.html" class="task-link">
-           Завдання 2 - Генератор промісів
+          <span class="icon"></span>
+          <span>Завдання 2 - Генератор промісів</span>
         </a>
       </div>
     </div>
